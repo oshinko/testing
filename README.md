@@ -1,1 +1,5 @@
 # Testing
+
+Links:
+
+- [mydoc](mydoc)
