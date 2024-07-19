@@ -1,0 +1,26 @@
+name: My Calendar
+description: https://www.city.kodaira.tokyo.jp/kurashi/files/92697/092697/att_0000059.pdf
+timezone: Asia/Tokyo
+events:
+  - id: 123e4567-e89b-12d3-a456-426614174000
+    summary: 可燃
+    start: 2024-01-04
+    end: 2024-01-05
+    allDay: true
+    description:
+    location:
+    repeating:
+      freq: WEEKLY
+      byDay:
+        - MO
+        - TH
+  - id: 123e4567-e89b-12d3-a456-426614174001
+    summary: 不燃・カン
+    start: 2024-01-09
+    end: 2024-01-10
+    allDay: true
+    repeating:
+      freq: WEEKLY
+      byDay:
+        - TU
+      interval: 4
