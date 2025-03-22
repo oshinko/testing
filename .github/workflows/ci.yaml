@@ -4,6 +4,8 @@ on:
   repository_dispatch:
     types: [merge_next]
 
+  workflow_dispatch:
+
 jobs:
   merge:
     runs-on: ubuntu-latest
