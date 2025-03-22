@@ -1,10 +1,8 @@
-name: Merge next to main
+name: Merge tag into main (FF-only)
 
 on:
   repository_dispatch:
-    types: [merge_next]
-
-  workflow_dispatch:
+    types: [merge_tag]
 
 jobs:
   merge:
@@ -17,13 +15,32 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Git config
+      - name: Set up Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Merge next into main
+      - name: Get tag name from payload
+        id: get-tag
         run: |
-          git fetch origin next
-          git merge origin/next --no-edit
+          echo "TAG=${{ github.event.client_payload.tag }}" >> $GITHUB_OUTPUT
+
+      - name: Validate tag
+        run: |
+          tag="${{ steps.get-tag.outputs.TAG }}"
+          if [ -z "$tag" ]; then
+            echo "No tag provided."
+            exit 1
+          fi
+
+          git fetch origin "refs/tags/$tag"
+          if ! git rev-parse "refs/tags/$tag" >/dev/null 2>&1; then
+            echo "Tag '$tag' not found."
+            exit 1
+          fi
+
+      - name: Merge the tag into main (FF-only)
+        run: |
+          tag="${{ steps.get-tag.outputs.TAG }}"
+          git merge --ff-only "refs/tags/$tag"
           git push origin main
