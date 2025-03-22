@@ -2,7 +2,7 @@ name: Merge tag into main (FF-only)
 
 on:
   repository_dispatch:
-    types: [merge_tag]
+    types: [merge-tag-into-main]
 
 jobs:
   merge:
