@@ -1,9 +1,6 @@
 name: Greeting
 
 on:
-  repository_dispatch:
-    types: [merge-tag-into-main]
-
   push:
     branches:
       - main
