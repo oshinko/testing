@@ -1,4 +1,4 @@
-name: Merge tag into main (FF-only)
+name: Greeting
 
 on:
   repository_dispatch:
