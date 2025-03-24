@@ -44,3 +44,7 @@ jobs:
           tag="${{ steps.get-tag.outputs.TAG }}"
           git merge --ff-only "refs/tags/$tag"
           git push origin main
+
+permissions:
+  contents: write   # リポジトリのコードを push/pull/edit できる
+  actions: write    # 他のワークフローをトリガーできる

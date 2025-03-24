@@ -1,0 +1,15 @@
+name: Merge tag into main (FF-only)
+
+on:
+  repository_dispatch:
+    types: [merge-tag-into-main]
+
+  push:
+    branches:
+      - main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello!"
