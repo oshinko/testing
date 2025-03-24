@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+  workflow_run:
+    workflows: [Merge tag into main (FF-only)]
+    types: [completed]
+
 jobs:
   merge:
     runs-on: ubuntu-latest
