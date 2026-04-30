@@ -14,21 +14,111 @@ index:
   name_ja: ウォッチリスト初期同額投資指数
   base_value: 1000
   base_date: null
-  currency: null
+  currency: JPY
   formula: "1000 * average(adjusted_price_today / adjusted_price_base)"
 
-constituents: []
-# Example:
-# constituents:
-#   - symbol: AAPL
-#     name: Apple Inc.
-#     market: US
-#     exchange: NASDAQ
-#     asset_type: equity
-#     note: null
-#   - symbol: 7203.T
-#     name: Toyota Motor Corporation
-#     market: JP
-#     exchange: TSE
-#     asset_type: equity
-#     note: null
+constituents:
+  - symbol: "8306"
+    ticker: 8306.T
+    name: 三菱ＵＦＪフィナンシャル・グループ
+    short_name: 三菱ＵＦＪフィナンシャル・グループ
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "4063"
+    ticker: 4063.T
+    name: 信越化学工業
+    short_name: 信越化学工業
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "3436"
+    ticker: 3436.T
+    name: SUMCO
+    short_name: SUMCO
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "4004"
+    ticker: 4004.T
+    name: レゾナックHD
+    short_name: レゾナックHD
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "6963"
+    ticker: 6963.T
+    name: ローム
+    short_name: ローム
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "6890"
+    ticker: 6890.T
+    name: フェローテック
+    short_name: フェローテック
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "6525"
+    ticker: 6525.T
+    name: KOKUSAI ELECTRIC
+    short_name: KOKUSAI ELECTRIC
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "5803"
+    ticker: 5803.T
+    name: フジクラ
+    short_name: フジクラ
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "5016"
+    ticker: 5016.T
+    name: JX金属
+    short_name: JX金属
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "1812"
+    ticker: 1812.T
+    name: 鹿島建設
+    short_name: 鹿島建設
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "2914"
+    ticker: 2914.T
+    name: JT
+    short_name: JT
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "1605"
+    ticker: 1605.T
+    name: INPEX
+    short_name: INPEX
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
+  - symbol: "8006"
+    ticker: 8006.T
+    name: ユアサ・フナショク
+    short_name: ユアサ・フナショク
+    market: JP
+    exchange: TSE
+    asset_type: equity
+    note: null
