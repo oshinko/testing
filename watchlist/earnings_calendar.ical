@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//oshinko//watchlist-earnings-calendar//JA
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ウォッチリスト決算開示カレンダー
+X-WR-CALDESC:oshinko/testing watchlist constituents earnings disclosure schedule. Events are to be populated from company IR and JPX/TSE sources.
+X-WR-TIMEZONE:Asia/Tokyo
+
+END:VCALENDAR
